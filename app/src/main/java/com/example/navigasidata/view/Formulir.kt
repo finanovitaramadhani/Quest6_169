@@ -33,5 +33,11 @@ fun FormIsian(
 
     val listData: MutableList<String> = mutableListOf(txtNama,txtGender,txtAlamat)
 
-
+    Scaffold (modifier=Modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(id = R.string.form_pendaftaran)) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = colorResource(id = R.color.teal_700))
+            )}
+    )
 }
